@@ -6,19 +6,19 @@ class Bank {
 	}
 }
 
-class SBI extends Bank {
+class Chase extends Bank {
 	int getRateOfInterest() {
 		return 8;
 	}
 }
 
-class ICICI extends Bank {
+class Bofa extends Bank {
 	int getRateOfInterest() {
 		return 7;
 	}
 }
 
-class AXIS extends Bank {
+class Wells extends Bank {
 	int getRateOfInterest() {
 		return 9;
 	}
@@ -26,11 +26,11 @@ class AXIS extends Bank {
 
 public class OverridingMethod {
 	public static void main(String args[]) {
-		SBI s = new SBI();
-		ICICI i = new ICICI();
-		AXIS a = new AXIS();
-		System.out.println("SBI Rate of Interest: " + s.getRateOfInterest());
-		System.out.println("ICICI Rate of Interest: " + i.getRateOfInterest());
-		System.out.println("AXIS Rate of Interest: " + a.getRateOfInterest());
+		Chase s = new Chase();
+		Bofa i = new Bofa();
+		Wells a = new Wells();
+		System.out.println("Chase Rate of Interest: " + s.getRateOfInterest());
+		System.out.println("BofAmerica Rate of Interest: " + i.getRateOfInterest());
+		System.out.println("Wells Fargo Rate of Interest: " + a.getRateOfInterest());
 	}
 }
